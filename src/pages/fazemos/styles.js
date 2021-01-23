@@ -24,3 +24,5 @@ justify-content: center;
     align-items: center;
 }
 `
+
+export default styled
