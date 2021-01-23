@@ -17,3 +17,4 @@ h1{
 }
 
 `
+export default styled

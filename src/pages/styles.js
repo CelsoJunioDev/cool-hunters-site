@@ -4,3 +4,5 @@ export const Container = styled.div`
 background: red;
 width: 100vh;
 `
+
+export default styled
