@@ -1,26 +1,20 @@
-import {Container, Content, Logo, Table} from './styles'
+import { Container, Logo, Table } from "./styles";
 
 function Header() {
-    return (
-      <Container>
-        <Content>
-          <Logo>
-            <img src="/images/logo.png"/>
-            
-          </Logo>
-          <Table>
-              <tr>
-                <th>HOME</th>
-                <th>QUEM SOMOS</th>
-                <th>O QUE FAZEMOS</th>
-                <th>CLIENTES</th>
-                <th>CONTATO</th>
-              </tr>
-            </Table>
-        </Content>
-      </Container>
-    )
-  }
-  
-  export default Header;
-  
+  return (
+    <Container>
+      <Logo>
+        <img src="/images/logo.png" />
+      </Logo>
+      <ul>
+        <li>HOME</li>
+        <li>QUEM SOMOS</li>
+        <li>O QUE FAZEMOS</li>
+        <li>CLIENTES</li>
+        <li>CONTATO</li>
+      </ul>
+    </Container>
+  );
+}
+
+export default Header;

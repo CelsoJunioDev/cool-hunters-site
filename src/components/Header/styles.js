@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.header`
   width: 100%;
   position: fixed;
   top: 0;
@@ -8,16 +8,32 @@ export const Container = styled.div`
   height: 70px;
   background: #2c1448;
   z-index: 1000;
-`;
-export const Content = styled.div`
+
   display: flex;
-  height: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 70px;
+
+  ul {
+    display: flex;
+    width: 45%;
+    justify-content: center;
+  }
+
+  li {
+    margin: 15px;
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    :hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
 `;
 export const Logo = styled.div`
   display: block;
+  margin-left: 70px;
   > img {
     width: 200px;
     margin-left: 4px;
@@ -26,24 +42,3 @@ export const Logo = styled.div`
   }
 `;
 
-export const Table = styled.table`
-  display: flex;
-  align-items: center;
-  border-spacing: 8px;
-  
-
-  th {
-    color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 15px;
-  transition: 0.3s;
-
-  :hover {
-    cursor: pointer;
-    opacity: 0.5;
-  }
-   
-  }
-  
-`;
