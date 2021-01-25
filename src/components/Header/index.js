@@ -1,20 +1,22 @@
-import {Container, Content, LogoContainer, MenuContainer, SpanHeader} from './styles'
+import {Container, Content, Logo, Table} from './styles'
 
 function Header() {
     return (
       <Container>
         <Content>
-          <LogoContainer>
+          <Logo>
             <img src="/images/logo.png"/>
             
-          </LogoContainer>
-          <MenuContainer>
-              <SpanHeader>HOME</SpanHeader>
-              <SpanHeader>QUEM SOMOS</SpanHeader>
-              <SpanHeader>O QUE FAZEMOS</SpanHeader>
-              <SpanHeader>CLIENTES</SpanHeader>
-              <SpanHeader>CONTATO</SpanHeader>
-            </MenuContainer>
+          </Logo>
+          <Table>
+              <tr>
+                <th>HOME</th>
+                <th>QUEM SOMOS</th>
+                <th>O QUE FAZEMOS</th>
+                <th>CLIENTES</th>
+                <th>CONTATO</th>
+              </tr>
+            </Table>
         </Content>
       </Container>
     )
