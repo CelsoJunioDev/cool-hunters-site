@@ -47,15 +47,3 @@ export const Table = styled.table`
   }
   
 `;
-export const SpanHeader = styled.span`
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-right: 15px;
-  transition: 0.3s;
-
-  :hover {
-    cursor: pointer;
-    opacity: 0.5;
-  }
-`;
