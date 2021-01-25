@@ -17,14 +17,7 @@ export const Container = styled.header`
   ul {
     display: flex;
     justify-content: center;
-    a{
-      color: #fff;
-        text-decoration: none;
-
-        :visited{
-          color: #fff;
-        }
-      }
+    
   }
 
   li {
@@ -43,7 +36,8 @@ export const Container = styled.header`
 `;
 
 export const SidebarLink = styled(LinkScroll)`
-  
+  color: #fff;
+        text-decoration: none;
   
 
 `
