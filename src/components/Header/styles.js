@@ -15,7 +15,6 @@ export const Container = styled.header`
 
   ul {
     display: flex;
-    width: 45%;
     justify-content: center;
   }
 
