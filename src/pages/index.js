@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
+import Link from "next/link";
 import Home from "./home";
 import Header from "../components/Header";
 import Fazemos from "./fazemos";
 import Clientes from "./clientes";
-import Link from "next/link";
+import Footer from '../components/Footer'
 
 function Index() {
   return (
@@ -18,6 +19,17 @@ function Index() {
       <Home />
       <Fazemos />
       <Clientes />
+      <Footer>
+        <Footer.Header>
+          <span>© 2020 coolhunters DIGITAL | TODOS OS DIREITOS RESERVADOS</span>
+        </Footer.Header>
+        <Footer.Media>
+          <img src="/images/whatsapp.svg"/>
+          <img src="/images/whatsapp.svg"/>
+          <img src="/images/whatsapp.svg"/>
+          <img src="/images/whatsapp.svg"/>
+        </Footer.Media>
+      </Footer>
     </>
   );
 }
