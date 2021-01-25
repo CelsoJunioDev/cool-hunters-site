@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkScroll } from 'react-scroll';
 
 export const Container = styled.header`
   width: 100%;
@@ -16,20 +17,37 @@ export const Container = styled.header`
   ul {
     display: flex;
     justify-content: center;
+    a{
+      color: #fff;
+        text-decoration: none;
+
+        :visited{
+          color: #fff;
+        }
+      }
   }
 
   li {
     margin: 15px;
     list-style: none;
-    color: #fff;
+    
     font-size: 14px;
     font-weight: bold;
     :hover {
       cursor: pointer;
       opacity: 0.5;
+
+      
     }
   }
 `;
+
+export const SidebarLink = styled(LinkScroll)`
+  
+  
+
+`
+
 export const Logo = styled.div`
   display: block;
   margin-left: 70px;

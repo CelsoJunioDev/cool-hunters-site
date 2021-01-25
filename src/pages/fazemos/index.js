@@ -3,7 +3,7 @@ import CardFazemos from '../../components/CardFazemos'
 
 function Fazemos() {
   return (
-      <Container>
+      <Container id="what">
 
           <h1>O QUE FAZEMOS</h1>
           <Cards>

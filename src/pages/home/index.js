@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export default function Home() {
   return (
-    <Container>
+    <Container id="home">
       <Content>
         <Title>
           <h1>
             WE SKIP THE <br />
             BULLSH*T!
           </h1>
-          <p>
+          <p id="who">
             Nós somos <Yellow>A CoolHunters.</Yellow>
           </p>
           <p>

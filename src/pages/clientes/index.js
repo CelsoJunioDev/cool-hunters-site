@@ -44,7 +44,7 @@ function Clientes() {
 
   return (
     <Container>
-      <h1>NOSSOS CLIENTES</h1>
+      <h1 id="clients">NOSSOS CLIENTES</h1>
       <Slider
         {...settings}
         style={{ width: "75%" }}
@@ -105,6 +105,9 @@ background-size: cover;
 min-height: 300px;
 h1{
     color: #fff;
+    transition: 0.5s;
 }
+
+
 
 `

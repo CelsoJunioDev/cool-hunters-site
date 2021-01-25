@@ -1,4 +1,4 @@
-import { Container, Logo, Table } from "./styles";
+import { Container, Logo, SidebarLink } from "./styles";
 
 function Header() {
   return (
@@ -8,11 +8,41 @@ function Header() {
       </Logo>
       <nav>
       <ul>
-        <li>HOME</li>
-        <li>QUEM SOMOS</li>
-        <li>O QUE FAZEMOS</li>
-        <li>CLIENTES</li>
-        <li>CONTATO</li>
+        <li>
+          <SidebarLink to="home"
+        smooth={true}
+        duration={500}
+        exact="true"
+        offset={-80} >HOME</SidebarLink>
+        </li>
+        <li>
+          <SidebarLink to="who"
+        smooth={true}
+        duration={500}
+        exact="true"
+        offset={-80} >QUEM SOMOS</SidebarLink>
+        </li>
+        <li>
+          <SidebarLink to="what"
+        smooth={true}
+        duration={500}
+        exact="true"
+        offset={-80}>O QUE FAZEMOS</SidebarLink>
+        </li>
+        <li>
+          <SidebarLink to="clients"
+        smooth={true}
+        duration={500}
+        exact="true" 
+        offset={-80}>CLIENTES</SidebarLink>
+        </li>
+        <li>
+          <SidebarLink to="contact"
+        smooth={true}
+        duration={500}
+        exact="true"
+        offset={-80} >CONTATO</SidebarLink>
+        </li>
       </ul>
       </nav>
     </Container>
