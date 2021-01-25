@@ -1,29 +1,34 @@
 import styled from "styled-components";
 
-export default function Home(){
-    return (
-<Container>
-<Content>
-  <Title>
-    <h1>WE SKIP THE <br/>BULLSH*T!</h1>
-    <p>
-      Nós somos <Yellow>A CoolHunters.</Yellow>
-      </p>
-      <p>
-      Uma agência de marketing digital que reuniu jovens talentos para <Yellow>mudar a cena do digital no Brasil.</Yellow> 
-      </p> 
-      <p> 
-      Com braços, mentes e corpos nos Estados Unidos, um dos maiores polos de criação de conteúdo do mundo. Assim, asseguramos.
-      </p> 
-      <p>
-      Aqui, a gente vai direto ao assunto e entrega o que você realmente busca: <Yellow>fazer a sua empresa crescer.</Yellow>
-    </p>
-  </Title>
-  
-</Content>
-<button>DIRETO AO ASSUNTO</button>
-</Container>
-    )
+export default function Home() {
+  return (
+    <Container>
+      <Content>
+        <Title>
+          <h1>
+            WE SKIP THE <br />
+            BULLSH*T!
+          </h1>
+          <p>
+            Nós somos <Yellow>A CoolHunters.</Yellow>
+          </p>
+          <p>
+            Uma agência de marketing digital que reuniu jovens talentos para{" "}
+            <Yellow>mudar a cena do digital no Brasil.</Yellow>
+          </p>
+          <p>
+            Com braços, mentes e corpos nos Estados Unidos, um dos maiores polos
+            de criação de conteúdo do mundo. Assim, asseguramos.
+          </p>
+          <p>
+            Aqui, a gente vai direto ao assunto e entrega o que você realmente
+            busca: <Yellow>fazer a sua empresa crescer.</Yellow>
+          </p>
+        </Title>
+      </Content>
+      <button>DIRETO AO ASSUNTO</button>
+    </Container>
+  );
 }
 
 const Container = styled.div`
@@ -34,19 +39,17 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 70px;
-  background: linear-gradient(
-          rgba(0, 0, 0, 0.8), 
-          rgba(0, 0, 0, 0.2)
-        ),url("https://images3.alphacoders.com/635/thumb-1920-63519.jpg"),  #0d0d0d ;
-background-position: center;
-background-repeat: inherit;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url("https://images3.alphacoders.com/635/thumb-1920-63519.jpg"), #0d0d0d;
+  background-position: center;
+  background-repeat: inherit;
 
   > button {
     border: none;
     padding: 10px;
     border-radius: 50px;
     width: 200px;
-    background: linear-gradient( to left, #ffba08, #980021  120%);
+    background: linear-gradient(to left, #ffba08, #980021 120%);
     color: #fff;
     transition: 0.5s;
 
@@ -56,7 +59,7 @@ background-repeat: inherit;
     }
   }
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     background-image: none;
   }
 `;
@@ -86,16 +89,3 @@ const Title = styled.header`
 const Yellow = styled.span`
   color: #f7cc00;
 `;
-
-const ImgTitle = styled.div`
-  width: 50%;
-
-  > img {
-    width: 100%;
-  }
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
