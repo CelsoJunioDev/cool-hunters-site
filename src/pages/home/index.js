@@ -6,15 +6,18 @@ export default function Home(){
 <Content>
   <Title>
     <h1>WE SKIP THE <br/>BULLSH*T!</h1>
-    <span>
+    <p>
       Nós somos <Yellow>A CoolHunters.</Yellow>
-      <br/> 
+      </p>
+      <p>
       Uma agência de marketing digital que reuniu jovens talentos para <Yellow>mudar a cena do digital no Brasil.</Yellow> 
-      <br/> 
+      </p> 
+      <p> 
       Com braços, mentes e corpos nos Estados Unidos, um dos maiores polos de criação de conteúdo do mundo. Assim, asseguramos.
-      <br/> 
+      </p> 
+      <p>
       Aqui, a gente vai direto ao assunto e entrega o que você realmente busca: <Yellow>fazer a sua empresa crescer.</Yellow>
-    </span>
+    </p>
   </Title>
   
 </Content>
@@ -58,12 +61,12 @@ background-repeat: inherit;
   }
 `;
 
-const Content = styled.div`
+const Content = styled.article`
   display: flex;
   flex-direction: row;
 `;
 
-const Title = styled.div`
+const Title = styled.header`
   width: 50%;
 
   > h1 {
@@ -72,7 +75,7 @@ const Title = styled.div`
     font-family: "Muli", Helvetica, Arial, Lucida, sans-serif;
   }
 
-  > span {
+  > p {
     color: #fff;
   }
   @media (max-width: 768px) {
