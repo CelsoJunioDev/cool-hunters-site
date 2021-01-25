@@ -6,6 +6,7 @@ function Header() {
       <Logo>
         <img src="/images/logo.png" />
       </Logo>
+      <nav>
       <ul>
         <li>HOME</li>
         <li>QUEM SOMOS</li>
@@ -13,6 +14,7 @@ function Header() {
         <li>CLIENTES</li>
         <li>CONTATO</li>
       </ul>
+      </nav>
     </Container>
   );
 }
