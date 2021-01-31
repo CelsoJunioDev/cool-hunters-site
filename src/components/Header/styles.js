@@ -14,13 +14,13 @@ export const Container = styled.header`
   justify-content: space-around;
   align-items: center;
 
-  ul {
-    display: flex;
-    justify-content: center;
-    
-  }
+  
+`;
 
-  li {
+export const NavMenu = styled.ul`
+display: flex;
+    justify-content: center;
+    li {
     margin: 15px;
     list-style: none;
     
@@ -33,8 +33,22 @@ export const Container = styled.header`
       
     }
   }
-`;
+  @media (max-width: 768px){
+    display: none;
+  }
+`
 
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+`
 export const SidebarLink = styled(LinkScroll)`
   color: #fff;
         text-decoration: none;
@@ -43,8 +57,6 @@ export const SidebarLink = styled(LinkScroll)`
 `
 
 export const Logo = styled.div`
-  display: block;
-  margin-left: 70px;
   > img {
     width: 200px;
     margin-left: 4px;

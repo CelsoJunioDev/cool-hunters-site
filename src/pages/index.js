@@ -1,16 +1,24 @@
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import Link from "next/link";
 import Home from "./home";
 import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
 import Fazemos from "./fazemos";
 import Clientes from "./clientes";
 import Footer from '../components/Footer'
 
 function Index() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
-      <Header />
+      <Header toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Link href="https://api.whatsapp.com/send?phone=5561983257893">
         <a target="_blank">
           <ImgWpp src="/images/whatsapp.svg" />
